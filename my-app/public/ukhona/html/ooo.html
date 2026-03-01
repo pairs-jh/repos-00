@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout Details Transcriptions</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+        }
+        .workout {
+            max-width: 400px;
+            margin-bottom: 40px;
+            background-color: #1c1c1e;
+            border-radius: 10px;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .icon {
+            font-size: 40px;
+            color: limegreen;
+        }
+        .title {
+            color: limegreen;
+            font-size: 24px;
+        }
+        .subtitle {
+            color: #fff;
+            font-size: 18px;
+        }
+        .time-location {
+            color: #aaa;
+            font-size: 14px;
+        }
+        .details {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+        .detail-item {
+            margin-bottom: 10px;
+        }
+        .label {
+            color: #aaa;
+            font-size: 14px;
+        }
+        .value {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .effort {
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+        }
+        .effort-number {
+            font-size: 32px;
+            margin-right: 10px;
+        }
+        .effort-level {
+            font-size: 24px;
+        }
+        .section-title {
+            font-size: 20px;
+            margin: 20px 0 10px;
+            color: #fff;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #333;
+        }
+        th {
+            color: #aaa;
+            font-size: 14px;
+        }
+        .graph {
+            background-color: #000;
+            padding: 10px;
+            border-radius: 8px;
+            margin: 10px 0;
+        }
+        .map {
+            background-color: #000;
+            padding: 10px;
+            border-radius: 8px;
+            margin: 10px 0;
+            text-align: center;
+        }
+        /* Colors for values */
+        .yellow { color: yellow; }
+        .pink { color: pink; }
+        .green { color: lightgreen; }
+        .cyan { color: cyan; }
+        .red { color: red; }
+        .blue { color: lightblue; }
+        .purple { color: purple; }
+    </style>
+</head>
+<body>
+    <h1>Transcribed Workout Details</h1>
+    
+    <section id="workout-a" class="workout">
+        <h2>Workout A: Sun, Nov 30 - Kampala</h2>
+        <div class="header">
+            <div class="icon">🏃‍♂️</div>
+            <div class="title">Outdoor Run</div>
+            <div class="subtitle">Open Goal</div>
+            <div class="time-location">08:34 - 12:02 · Kampala</div>
+        </div>
+        <h3>Workout Details</h3>
+        <div class="details">
+            <div class="detail-item">
+                <div class="label">Workout Time</div>
+                <div class="value yellow">3:28:29</div>
+            </div>
+            <div class="detail-item">
+                <div class="label">Distance</div>
+                <div class="value cyan">9.00MI</div>
+            </div>
+            <div class="detail-item">
+                <div class="label">Active Calories</div>
+                <div class="value pink">964CAL</div>
+            </div>
+            <div class="detail-item">
+                <div class="label">Total Calories</div>
+                <div class="value pink">1,413CAL</div>
+            </div>
+            <div class="detail-item">
+                <div class="label">Elevation Gain</div>
+                <div class="value green">447FT</div>
+            </div>
+            <div class="detail-item">
+                <div class="label">Avg. Power</div>
+                <div class="value green">105W</div>
+            </div>
+            <div class="detail-item">
+                <div class="label">Avg. Cadence</div>
+                <div class="value cyan">93SPM</div>
+            </div>
+            <div class="detail-item">
+                <div class="label">Avg. Pace</div>
+                <div class="value cyan">23'10"/MI</div>
+            </div>
+            <div class="detail-item">
+                <div class="label">Avg. Heart Rate</div>
+                <div class="value red">87BPM</div>
+            </div>
+        </div>
+        <div class="effort">
+            <div class="label">Effort</div>
+            <div class="effort-number blue">3</div>
+            <div class="effort-level blue">Easy</div>
+        </div>
+        <div class="section-title">Splits</div>
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Time</th>
+                    <th>Pace</th>
+                    <th>Heart Rate</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td class="yellow">24:18</td>
+                    <td class="cyan">24'18"</td>
+                    <td class="red">82BPM</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td class="yellow">23:25</td>
+                    <td class="cyan">23'25"</td>
+                    <td class="red">84BPM</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td class="yellow">23:16</td>
+                    <td class="cyan">23'16"</td>
+                    <td class="red">90BPM</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td class="yellow">24:27</td>
+                    <td class="cyan">24'27"</td>
+                    <td class="red">82BPM</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td class="yellow">23:12</td>
+                    <td class="cyan">23'12"</td>
+                    <td class="red">83BPM</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="section-title">Elevation</div>
+        <div class="graph">
+            <div class="value green">Gain: 447FT · 3,730-3,932FT</div>
+            <!-- Placeholder for graph -->
+            <p>(Graph showing elevation over time, relatively flat with minor variations.)</p>
+        </div>
+        <div class="section-title">Heart Rate</div>
+        <div class="graph">
+            <div class="value red">Average: 87BPM · 66-129BPM</div>
+            <!-- Placeholder for graph -->
+            <p>(Graph showing heart rate over time, fluctuating between 66 and 129 BPM.)</p>
+        </div>
+        <div class="section-title">Pace</div>
+        <div class="graph">
+            <div class="value cyan">Average: 23'10"/Mi · 27'51"-19'15"/Mi</div>
+            <!-- Placeholder for graph -->
+            <p>(Graph showing pace over time.)</p>
+        </div>
+        <div class="section-title">Power</div>
+        <div class="graph">
+            <div class="value green">Average: 105W · 66-388W</div>
+            <!-- Placeholder for graph -->
+            <p>(Graph showing power over time.)</p>
+        </div>
+        <div class="section-title">Map</div>
+        <div class="map">
+            <!-- Placeholder for map -->
+            <p>Map showing route to Bulingugwe Island, with blue line path and red/green end points.</p>
+        </div>
+    </section>
+    
+    <section id="workout-b" class="workout">
+        <h2>Workout B: Sat, Nov 15 - Bufumbira</h2>
+        <div class="header">
+            <div class="icon">🏃‍♂️</div>
+            <div class="title">Outdoor Run</div>
+            <div class="subtitle">Open Goal</div>
+            <div class="time-location">08:04 - 17:41 · Bufumbira</div>
+        </div>
+        <h3>Workout Details</h3>
+        <div class="details">
+            <div class="detail-item">
+                <div class="label">Workout Time</div>
+                <div class="value yellow">9:37:22</div>
+            </div>
+            <div class="detail-item">
+                <div class="label">Distance</div>
+                <div class="value cyan">9.50MI</div>
+            </div>
+            <div class="detail-item">
+                <div class="label">Active Calories</div>
+                <div class="value pink">2,071CAL</div>
+            </div>
+            <div class="detail-item">
+                <div class="label">Total Calories</div>
+                <div class="value pink">3,315CAL</div>
+            </div>
+            <div class="detail-item">
+                <div class="label">Elevation Gain</div>
+                <div class="value green">3,503FT</div>
+            </div>
+            <div class="detail-item">
+                <div class="label">Avg. Power</div>
+                <div class="value green">112W</div>
+            </div>
+            <div class="detail-item">
+                <div class="label">Avg. Cadence</div>
+                <div class="value cyan">39SPM</div>
+            </div>
+            <div class="detail-item">
+                <div class="label">Avg. Pace</div>
+                <div class="value cyan">---"/MI</div>
+            </div>
+            <div class="detail-item">
+                <div class="label">Avg. Heart Rate</div>
+                <div class="value red">129BPM</div>
+            </div>
+        </div>
+        <div class="effort">
+            <div class="label">Effort</div>
+            <div class="effort-number blue">5</div>
+            <div class="effort-level blue">Moderate</div>
+        </div>
+        <div class="section-title">Splits</div>
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Time</th>
+                    <th>Pace</th>
+                    <th>Heart Rate</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td class="yellow">33:13</td>
+                    <td class="cyan">33'13"</td>
+                    <td class="red">133BPM</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td class="yellow">48:44</td>
+                    <td class="cyan">48'44"</td>
+                    <td class="red">143BPM</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td class="yellow">53:19</td>
+                    <td class="cyan">53'19"</td>
+                    <td class="red">137BPM</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td class="yellow">1:19:52</td>
+                    <td class="cyan">---"</td>
+                    <td class="red">138BPM</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td class="yellow">2:20:29</td>
+                    <td class="cyan">---"</td>
+                    <td class="red">131BPM</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="section-title">Segments</div>
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Distance</th>
+                    <th>Time</th>
+                    <th>Pace</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td class="cyan">4.97MI</td>
+                    <td class="yellow">5:50:08</td>
+                    <td class="cyan">---"/MI</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td class="cyan">1.44MI</td>
+                    <td class="yellow">1:58:35</td>
+                    <td class="cyan">---"/MI</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td class="cyan">191FT</td>
+                    <td class="yellow">01:18</td>
+                    <td class="cyan">36'52"/MI</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td class="cyan">8FT</td>
+                    <td class="yellow">00:03</td>
+                    <td class="cyan">27'05"/MI</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td class="cyan">2FT</td>
+                    <td class="yellow">00:02</td>
+                    <td class="cyan">---</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="section-title">Elevation</div>
+        <div class="graph">
+            <div class="value green">Gain: 3,503FT · 3,470-11,390FT</div>
+            <!-- Placeholder for graph -->
+            <p>(Graph showing elevation over time, steady climb up followed by descent.)</p>
+        </div>
+        <div class="section-title">Heart Rate</div>
+        <div class="graph">
+            <div class="value red">Average: 129BPM · 94-168BPM</div>
+            <!-- Placeholder for graph -->
+            <p>(Graph showing heart rate over time, fluctuating between 94 and 168 BPM.)</p>
+        </div>
+        <div class="section-title">Pace</div>
+        <div class="graph">
+            <div class="value cyan">Average: 0'00"/Mi · 56'25"-18'50"/Mi</div>
+            <!-- Placeholder for graph -->
+            <p>(Graph showing pace over time.)</p>
+        </div>
+        <div class="section-title">Power</div>
+        <div class="graph">
+            <div class="value green">Average: 112W · 66-462W</div>
+            <!-- Placeholder for graph -->
+            <p>(Graph showing power over time.)</p>
+        </div>
+        <div class="section-title">Map</div>
+        <div class="map">
+            <!-- Placeholder for map -->
+            <p>Map showing route in Mgahinga Gorilla National Park, ascending Mount Gahinga (11,398 ft), with blue line path and green end point. Labels: abinyo.</p>
+        </div>
+    </section>
+    
+    <section id="workout-c" class="workout">
+        <h2>Workout C: Sun, Mar 1 - Kampala</h2>
+        <div class="header">
+            <div class="icon">🏃‍♂️</div>
+            <div class="title">Outdoor Run</div>
+            <div class="subtitle">Open Goal</div>
+            <div class="time-location">07:26 - 10:49 · Kampala</div>
+        </div>
+        <h3>Workout Details</h3>
+        <div class="details">
+            <div class="detail-item">
+                <div class="label">Workout Time</div>
+                <div class="value yellow">3:22:52</div>
+            </div>
+            <div class="detail-item">
+                <div class="label">Distance</div>
+                <div class="value cyan">10.41MI</div>
+            </div>
+            <div class="detail-item">
+                <div class="label">Active Calories</div>
+                <div class="value pink">1,649CAL</div>
+            </div>
+            <div class="detail-item">
+                <div class="label">Total Calories</div>
+                <div class="value pink">2,086CAL</div>
+            </div>
+            <div class="detail-item">
+                <div class="label">Elevation Gain</div>
+                <div class="value green">1,796FT</div>
+            </div>
+            <div class="detail-item">
+                <div class="label">Avg. Power</div>
+                <div class="value green">149W</div>
+            </div>
+            <div class="detail-item">
+                <div class="label">Avg. Cadence</div>
+                <div class="value cyan">103SPM</div>
+            </div>
+            <div class="detail-item">
+                <div class="label">Avg. Pace</div>
+                <div class="value cyan">19'28"/MI</div>
+            </div>
+            <div class="detail-item">
+                <div class="label">Avg. Heart Rate</div>
+                <div class="value red">126BPM</div>
+            </div>
+        </div>
+        <div class="effort">
+            <div class="label">Effort</div>
+            <div class="effort-number purple">7</div>
+            <div class="effort-level purple">Hard</div>
+        </div>
+        <div class="section-title">Splits</div>
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Time</th>
+                    <th>Pace</th>
+                    <th>Heart Rate</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td class="yellow">17:10</td>
+                    <td class="cyan">17'10"</td>
+                    <td class="red">109BPM</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td class="yellow">19:42</td>
+                    <td class="cyan">19'42"</td>
+                    <td class="red">126BPM</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td class="yellow">20:35</td>
+                    <td class="cyan">20'35"</td>
+                    <td class="red">130BPM</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td class="yellow">17:49</td>
+                    <td class="cyan">17'49"</td>
+                    <td class="red">119BPM</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td class="yellow">18:03</td>
+                    <td class="cyan">18'03"</td>
+                    <td class="red">126BPM</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="section-title">Elevation</div>
+        <div class="graph">
+            <div class="value green">Gain: 1,796FT · 3,770-4,236FT</div>
+            <!-- Placeholder for graph -->
+            <p>(Graph showing elevation over time, with hills and variations.)</p>
+        </div>
+        <div class="section-title">Heart Rate</div>
+        <div class="graph">
+            <div class="value red">Average: 126BPM · 92-176BPM</div>
+            <!-- Placeholder for graph -->
+            <p>(Graph showing heart rate over time, fluctuating between 92 and 176 BPM.)</p>
+        </div>
+        <div class="section-title">Pace</div>
+        <div class="graph">
+            <div class="value cyan">Average: 19'28"/Mi · 31'36"-16'11"/Mi</div>
+            <!-- Placeholder for graph -->
+            <p>(Graph showing pace over time.)</p>
+        </div>
+        <div class="section-title">Power</div>
+        <div class="graph">
+            <div class="value green">Average: 149W · 66-333W</div>
+            <!-- Placeholder for graph -->
+            <p>(Graph showing power over time.)</p>
+        </div>
+        <div class="section-title">Map</div>
+        <div class="map">
+            <!-- Placeholder for map -->
+            <p>Map showing urban route in Kampala area, with blue line path and green end point.</p>
+        </div>
+    </section>
+</body>
+</html>

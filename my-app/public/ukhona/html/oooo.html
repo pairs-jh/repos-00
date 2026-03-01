@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout Analysis and Comparison</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h1, h2, h3 {
+            color: limegreen;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #333;
+            color: #fff;
+        }
+        th {
+            background-color: #1c1c1e;
+            color: #aaa;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin: 20px 0;
+        }
+        .grid-item {
+            text-align: center;
+            background-color: #1c1c1e;
+            padding: 10px;
+            border-radius: 8px;
+        }
+        .grid-item img {
+            width: 150px;
+            height: 150px;
+        }
+        .grid-label {
+            margin-top: 5px;
+            font-weight: bold;
+            color: cyan;
+        }
+    </style>
+</head>
+<body>
+    <h1>Workout Performance Comparison and Calorie Burn Analysis</h1>
+    
+    <p>The subject is a 45-year-old male weighing 215 lbs (approximately 97.5 kg). I'll assume an average height of 5'10" (178 cm) for contextual calculations, as height impacts basal metabolic rate (BMR) and calorie estimates. Based on the Harris-Benedict equation, the estimated BMR is around 1,992 calories per day, or roughly 83 calories per hour at rest. This helps contextualize the "total calories" (which include resting calories) versus "active calories" from the workouts.</p>
+    
+    <p>The three workouts show significant variation in intensity, terrain, and purpose:</p>
+    <ul>
+        <li><strong>Workout A (Nov 30, Kampala)</strong>: A low-intensity, easy effort run/walk over flat terrain (447 ft elevation gain). Slow pace (23'10"/mi), low heart rate (87 BPM avg), and moderate cadence (93 SPM) suggest this was more of a leisurely or recovery session, possibly with walking segments.</li>
+        <li><strong>Workout B (Nov 15, Bufumbira)</strong>: A long, moderate-effort hike with substantial climbing (3,503 ft elevation gain, peaking around 11,390 ft). Extremely slow "pace" (not fully tracked, but splits indicate 33-53 min/mi initially), very low cadence (39 SPM), and higher heart rate (129 BPM avg) point to rugged, off-trail terrain (e.g., mountain hiking in Mgahinga Gorilla National Park). This looks like an endurance-focused adventure rather than a standard run.</li>
+        <li><strong>Workout C (Mar 1, Kampala)</strong>: A hard-effort run with moderate hills (1,796 ft elevation gain). Faster pace (19'28"/mi), higher power (149W avg), cadence (103 SPM), and heart rate (126 BPM avg) indicate a more intense training session, possibly with intervals or sustained effort.</li>
+    </ul>
+    
+    <h2>Calorie Burn Analysis</h2>
+    <p>Calorie burn is influenced by duration, intensity (measured via heart rate, power, and pace), body weight, elevation changes, and efficiency. The device's estimates seem reasonable but conservative compared to standard formulas—active calories reflect exercise expenditure, while total calories add resting burn (BMR contribution).</p>
+    
+    <ul>
+        <li><strong>Raw Data Summary</strong>:
+            <ul>
+                <li>Workout A: 964 active cal, 1,413 total cal (over 3.47 hours).</li>
+                <li>Workout B: 2,071 active cal, 3,315 total cal (over 9.62 hours).</li>
+                <li>Workout C: 1,649 active cal, 2,086 total cal (over 3.38 hours).</li>
+            </ul>
+        </li>
+        <li><strong>Burn Rates</strong>:
+            <ul>
+                <li><strong>Active Calories per Hour</strong>: A: ~278 cal/hr (low intensity). B: ~215 cal/hr (sustained but lower due to slow movement and possible rests). C: ~488 cal/hr (highest, reflecting harder effort).</li>
+                <li><strong>Active Calories per Mile</strong>: A: ~107 cal/mi (efficient but slow). B: ~218 cal/mi (high due to elevation—climbing burns ~2x more than flat). C: ~158 cal/mi (balanced, faster speed increases burn).</li>
+                <li><strong>Total Calories (Including Resting)</strong>: These align well with BMR addition. For A: Resting ~288 cal (83 cal/hr × 3.47), total estimated ~1,252 (close to 1,413—slight overage possibly from device algorithm). B: Resting ~798 cal, total ~2,869 (vs. 3,315—higher due to environmental factors like altitude). C: Resting ~280 cal, total ~1,929 (vs. 2,086—reasonable).</li>
+            </ul>
+        </li>
+        <li><strong>Estimated vs. Actual (Using Standard Formulas)</strong>:
+            <p>Using rough MET (Metabolic Equivalent of Task) values:</p>
+            <ul>
+                <li>Walking/light running (A and parts of C): MET ~4-6. For 215 lbs, expected active cal = (MET × 97.5 kg × hours) - BMR contribution. For A: ~4 MET → ~800-1,000 active cal (matches closely).</li>
+                <li>Hiking with elevation (B): MET ~6-8+ (extra for uphill). Expected ~1,800-2,500 active cal (aligns well, considering 3,503 ft gain adds ~0.5 cal/lb per 1,000 ft vertical, or ~215 cal extra).</li>
+                <li>Moderate running (C): MET ~7-9. Expected ~1,400-1,800 active cal (good match).</li>
+            </ul>
+            <p>Overall, the burns seem accurate for a 45-year-old at this weight. Factors like age (slightly reduced metabolism) and potential muscle mass (higher power in C suggests good fitness) influence this. If the subject is overweight (BMI ~30.9 assuming 5'10"), these workouts aid weight loss—aim for 500-1,000 cal deficit/day for safe progress.</p>
+        </li>
+        <li><strong>Efficiency and Factors</strong>:
+            <ul>
+                <li>Elevation massively boosts burn in B (3,503 ft vs. 447/1,796 ft in others—equivalent to extra ~1-2 miles of flat running per 1,000 ft).</li>
+                <li>Heart rate zones: A (low, ~50-60% max HR, assuming max ~175 BPM for age) = fat-burning zone. B/C (70-80%) = cardio zone, better for endurance/VO2 max.</li>
+                <li>Potential underestimation: Device algorithms (e.g., Apple Watch) can undervalue non-steady activities like hiking; actual burn in B could be 10-20% higher due to terrain.</li>
+            </ul>
+        </li>
+    </ul>
+    
+    <h2>Performance Comparison</h2>
+    <p>Comparing key metrics normalized where possible:</p>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Metric</th>
+                <th>Workout A (Easy)</th>
+                <th>Workout B (Moderate)</th>
+                <th>Workout C (Hard)</th>
+                <th>Notes/Comparison</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Duration</strong></td>
+                <td>3:28:29</td>
+                <td>9:37:22</td>
+                <td>3:22:52</td>
+                <td>B is 3x longer, focused on endurance; A/C similar for shorter sessions.</td>
+            </tr>
+            <tr>
+                <td><strong>Distance</strong></td>
+                <td>9.00 mi</td>
+                <td>9.50 mi</td>
+                <td>10.41 mi</td>
+                <td>C covers most ground; B similar distance but slower due to terrain.</td>
+            </tr>
+            <tr>
+                <td><strong>Avg Pace</strong></td>
+                <td>23'10"/mi</td>
+                <td>--- (est. 60'+/mi)</td>
+                <td>19'28"/mi</td>
+                <td>C fastest (20% quicker than A); B not comparable—more hike than run.</td>
+            </tr>
+            <tr>
+                <td><strong>Elevation Gain</strong></td>
+                <td>447 ft</td>
+                <td>3,503 ft</td>
+                <td>1,796 ft</td>
+                <td>B dominates (8x A, 2x C)—indicates mountainous route; A flattest.</td>
+            </tr>
+            <tr>
+                <td><strong>Avg Power</strong></td>
+                <td>105W</td>
+                <td>112W</td>
+                <td>149W</td>
+                <td>C highest output (42% > A); B sustained despite low cadence.</td>
+            </tr>
+            <tr>
+                <td><strong>Avg Cadence</strong></td>
+                <td>93 SPM</td>
+                <td>39 SPM</td>
+                <td>103 SPM</td>
+                <td>C most efficient stride; B very low (walking/hiking steps).</td>
+            </tr>
+            <tr>
+                <td><strong>Avg Heart Rate</strong></td>
+                <td>87 BPM</td>
+                <td>129 BPM</td>
+                <td>126 BPM</td>
+                <td>A recovery-level; B/C similar intensity but B longer exposure risks fatigue.</td>
+            </tr>
+            <tr>
+                <td><strong>Effort Level</strong></td>
+                <td>3 (Easy)</td>
+                <td>5 (Moderate)</td>
+                <td>7 (Hard)</td>
+                <td>Progressive intensity; good mix for periodization.</td>
+            </tr>
+            <tr>
+                <td><strong>Splits Variability</strong></td>
+                <td>Consistent ~23-24 min/mi</td>
+                <td>Highly variable (33 min to 2+ hrs)</td>
+                <td>Varied 17-20 min/mi</td>
+                <td>A steady; B erratic (pauses?); C shows pushes/drops.</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <ul>
+        <li><strong>Overall Trends</strong>: A is baseline/easy, ideal for recovery. B emphasizes endurance and strength (high elevation, low cadence/power sustained over hours). C shows improved speed and power, suggesting fitness gains (e.g., 15% faster pace, 42% higher power than A). Distance similar across A/B, but C edges out—indicating progression over time (A Nov 30, B Nov 15, C Mar 1).</li>
+        <li><strong>Strengths</strong>: Variety prevents burnout; B builds hiking-specific fitness (e.g., for trails); C demonstrates capacity for higher intensity, good for cardiovascular health.</li>
+        <li><strong>Weaknesses</strong>: Low cadences in A/B suggest inefficient form or walking—aim for 160-180 SPM in runs. HR in A is unusually low (possible under-reading or very fit); B's length risks overtraining for a 45yo. No speed work evident; paces are slow for "running" (elite runners do 5-7 min/mi, recreational 10-12 min/mi).</li>
+    </ul>
+    
+    <h2>Critique and Recommendations</h2>
+    <p>These workouts reflect a well-rounded but recreational approach for a 45-year-old male at 215 lbs. Positives: Consistent activity (3-10 hours/session) supports weight management and heart health—burning 964-2,071 active cal/session could contribute to 1-2 lbs/week loss with diet. Elevation in B/C adds bone/muscle benefits, reducing age-related loss. Effort progression (3→5→7) shows smart training buildup, avoiding injury.</p>
+    
+    <p>Critiques:</p>
+    <ul>
+        <li><strong>Intensity Balance</strong>: A is too easy (HR 87 BPM is near resting for many—max HR formula: 220-age=175, so 50% max); could incorporate intervals for better burn/efficiency. B's extreme duration (9+ hours) risks dehydration, joint strain, or overuse injuries, especially at elevation (altitude sickness possible). C is strong but paces remain slow—indicating potential for form improvement or weight loss to boost speed.</li>
+        <li><strong>Calorie Efficiency</strong>: Burns are decent but could be higher with faster paces (e.g., C's 488 cal/hr is good, but elite training hits 600+). For 215 lbs, aim for 300-500 active cal/hr in moderate sessions. Device may underestimate if not calibrated for weight/age.</li>
+        <li><strong>Health Considerations</strong>: At 45 and 215 lbs, prioritize recovery (e.g., post-B rest days). Monitor HR variability—B/C near 70-80% max is fine, but sustained high could stress heart. No strength/cross-training evident; add weights to build power.</li>
+        <li><strong>Improvements</strong>: Track VO2 max (estimated ~30-35 ml/kg/min from data—below average for age; target 40+). Goal: Faster paces (under 15 min/mi) via HIIT. For weight loss, combine with 2,200-2,500 cal diet. Consult doctor for long hikes like B.</li>
+    </ul>
+    
+    <p>This detail allows a critique: Solid foundation, but shift toward efficiency and balance for optimal results—e.g., more C-like sessions, fewer ultra-long B's.</p>
+    
+    <h2>3x3 Grid of Image Placeholders</h2>
+    <p>Below is a symmetrical 3x3 grid of image placeholders. Each row represents a workout (A, B, C), with 3 columns for key visuals (e.g., Column 1: Map, Column 2: Heart Rate Graph, Column 3: Elevation Graph).</p>
+    
+    <div class="grid-container">
+        <div class="grid-item">
+            <img src="https://via.placeholder.com/150?text=A1" alt="A1">
+            <div class="grid-label">A1</div>
+        </div>
+        <div class="grid-item">
+            <img src="https://via.placeholder.com/150?text=A2" alt="A2">
+            <div class="grid-label">A2</div>
+        </div>
+        <div class="grid-item">
+            <img src="https://via.placeholder.com/150?text=A3" alt="A3">
+            <div class="grid-label">A3</div>
+        </div>
+        <div class="grid-item">
+            <img src="https://via.placeholder.com/150?text=B1" alt="B1">
+            <div class="grid-label">B1</div>
+        </div>
+        <div class="grid-item">
+            <img src="https://via.placeholder.com/150?text=B2" alt="B2">
+            <div class="grid-label">B2</div>
+        </div>
+        <div class="grid-item">
+            <img src="https://via.placeholder.com/150?text=B3" alt="B3">
+            <div class="grid-label">B3</div>
+        </div>
+        <div class="grid-item">
+            <img src="https://via.placeholder.com/150?text=C1" alt="C1">
+            <div class="grid-label">C1</div>
+        </div>
+        <div class="grid-item">
+            <img src="https://via.placeholder.com/150?text=C2" alt="C2">
+            <div class="grid-label">C2</div>
+        </div>
+        <div class="grid-item">
+            <img src="https://via.placeholder.com/150?text=C3" alt="C3">
+            <div class="grid-label">C3</div>
+        </div>
+    </div>
+</body>
+</html>
