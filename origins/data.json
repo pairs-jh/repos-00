@@ -1,9 +1,18 @@
 [
   {
+    "id": "mplk1mtbp715",
+    "url": "https://abikesa.github.io/zarathustra/",
+    "label": "Pyro",
+    "emoji": "🗂️",
+    "era": "Pre-Mania",
+    "notes": "Flight of ideas",
+    "createdAt": 1779734626751
+  },
+  {
     "id": "mpljn83vw5tm",
     "url": "https://pairs-jh.github.io/repos-00/",
     "label": "Vite/React on GH-PAGES",
-    "emoji": "🗂️",
+    "emoji": "ðï¸",
     "era": "Annealing",
     "notes": "iPhone quality UI",
     "createdAt": 1779733954507
